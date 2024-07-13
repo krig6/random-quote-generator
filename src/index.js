@@ -1,1 +1,3 @@
-console.log('Hello World!');
+import getQuote from "./getQuote";
+
+console.log(getQuote());
