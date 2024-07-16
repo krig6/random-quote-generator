@@ -13,13 +13,8 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.resolve(__dirname, 'dist')
+            static: './dist',
         },
-        port: 3000,
-        open: true,
-        compress: true,
-        historyApiFallback: true,
-        hot: false,
     },
     module: {
         rules: [
