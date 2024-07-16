@@ -22,6 +22,7 @@ module.exports = {
         new HTMLWebpackPlugin({
             title: 'The Sage Says...',
             filename: 'index.html',
+            template: 'src/template.html'
         }),
     ],
 }
