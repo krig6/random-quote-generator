@@ -8,7 +8,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js',
+        filename: '[name].[contenthash].js',
     },
     module: {
         rules: [
@@ -17,6 +17,9 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
         ],
+    },
+    cache: {
+        type: 'filesystem',
     },
     plugins: [
         new HTMLWebpackPlugin({
