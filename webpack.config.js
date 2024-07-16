@@ -3,18 +3,20 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: {
-        bundle: path.resolve(__dirname, 'src/index.js'),
-    },
+    entry: './src/index.js',
     output: {
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[contenthash].js',
-        clean: true,
     },
     devServer: {
         static: {
-            static: './dist',
+            directory: path.resolve(__dirname, 'dist')
         },
+        port: 3000,
+        open: true,
+        compress: true,
+        historyApiFallback: true,
+        hot: false,
     },
     module: {
         rules: [
