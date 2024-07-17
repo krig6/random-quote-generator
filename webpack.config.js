@@ -31,7 +31,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            title: 'The Sage Says...',
+            title: 'Wisdom of the Sage',
             filename: 'index.html',
             template: 'src/template.html'
         }),
