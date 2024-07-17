@@ -1,10 +1,88 @@
-.container {
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap");
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Colors */
+  --app-background-color: #f0f8ff;
+  --accent-light-color: #4682b4;
+  --text-color: #2f4f4f;
+  /* Transition */
+  --transition-fast: 0.1s;
+  --transition-normal: 0.5s;
+  --transition-slow: 1s;
+}
+
+html {
+  background: var(--app-background-color);
+  color: var(--text-color);
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
-  color: blanchedalmond;
+  padding-inline: 10rem;
+}
+.container {
+  align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
   text-align: center;
+  gap: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 4px 16px var(--text-color);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.quote {
+  font-size: 2rem;
+}
+
+.get-quote {
+  padding: 0.5rem 0.8rem;
+  width: 40%;
+  border-radius: 1rem;
+  color: var(--text-color);
+  background-color: var(--accent-light-color);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+  border: 4px solid var(--accent-light-color);
+}
+
+.get-quote:active {
+  box-shadow: 0 2px 4px var(--accent-light-color);
+  transform: scale(0.9);
+}
+
+.get-quote:hover {
+  background-color: var(--accent-light-color);
+  box-shadow: 0 4px 6px var(--accent-light-color);
+  color: var(--app-background-color);
 }
