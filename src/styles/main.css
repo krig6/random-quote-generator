@@ -1,3 +1,10 @@
-html {
-  color: red;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: blanchedalmond;
+  flex-direction: column;
+  text-align: center;
 }
