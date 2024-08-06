@@ -33,7 +33,8 @@ module.exports = {
         new HTMLWebpackPlugin({
             title: 'Wisdom of the Sage',
             filename: 'index.html',
-            template: 'src/template.html'
+            template: 'src/template.html',
+            favicon: 'src/favicon.png'
         }),
     ],
 }
